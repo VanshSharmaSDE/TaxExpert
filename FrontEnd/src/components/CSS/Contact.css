@@ -1,0 +1,138 @@
+.main-body-contact{
+    display: flex;
+    width: 102%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 30px;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-image: linear-gradient(
+  330deg,
+  hsl(106deg 100% 20%) 0%,
+  hsl(106deg 91% 20%) 3%,
+  hsl(106deg 83% 20%) 6%,
+  hsl(106deg 75% 20%) 9%,
+  hsl(106deg 68% 19%) 11%,
+  hsl(106deg 62% 19%) 14%,
+  hsl(106deg 56% 18%) 17%,
+  hsl(106deg 50% 18%) 20%,
+  hsl(106deg 45% 17%) 23%,
+  hsl(106deg 40% 16%) 26%,
+  hsl(106deg 35% 15%) 30%,
+  hsl(106deg 31% 15%) 34%,
+  hsl(106deg 27% 13%) 38%,
+  hsl(106deg 24% 12%) 42%,
+  hsl(106deg 20% 11%) 47%,
+  hsl(106deg 17% 10%) 53%,
+  hsl(106deg 14% 8%) 59%,
+  hsl(106deg 11% 7%) 66%,
+  hsl(106deg 8% 5%) 73%,
+  hsl(106deg 5% 4%) 82%,
+  hsl(106deg 2% 2%) 90%,
+  hsl(0deg 0% 0%) 100%
+);
+  }
+  .main-body-contact h1{
+    font-size: 40px;
+  }
+
+.main-body-contact h1, .main-body-contact p{
+  text-align: center;
+}
+
+.main-body-contact form{
+    display: flex;
+    gap: 30px;
+    border-radius: 30px;
+    height: 40vh;
+    padding: 20px 30px;
+}
+
+.main-body-contact form img{
+  height: 40vh;
+}
+
+.main-body-contact label{
+  display:block;
+  margin:1em 0 .2em;
+}
+.main-body-contact input, select, textarea{
+  border-radius: 20px;
+  display:block;
+  width:400px;
+  padding:.3em;
+  font-size:20px;
+  background-color:#fbfbfb;
+  border:solid 1px #CCC;
+  resize:vertical;
+  outline: none;
+}
+.main-body-contact textarea{
+  min-height:85px;
+}
+.main-body-contact select{
+  color:indigo;
+}
+.main-body-contact option{
+  color:blue;
+  background: lavenderBlush;
+}
+.main-body-contact input[type=checkbox]{
+  display:inline;
+  width:auto;
+  color:red;
+}
+
+.main-body-contact input[type=submit]{
+  background:lightcoral;
+  margin:1em 0 0;
+  color:white;
+  border:none;
+  border-radius:8px;
+  transition:all .3s ease-out;
+}
+
+.main-body-contact input:focus,
+.main-body-contact input:hover,
+.main-body-contact select:focus,
+.main-body-contact select:hover,
+.main-body-contact textarea:focus,
+.main-body-contact textarea:hover{
+  background: rgb(235, 253, 198);
+}
+
+/* hover and focus states */
+.main-body-contact input[type=submit]:hover,
+.main-body-contact input[type=submit]:focus{
+  background: yellowgreen;
+  outline:none;
+}
+
+@media only screen  and (min-width: 300px) and (max-width: 498px) {
+  .main-body-contact{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .main-body-contact form{
+    height: auto;
+    width: 77%;
+    flex-direction: column;
+  }
+  .main-body-contact form img{
+    height: 33vh;
+  }
+  .main-body-contact input, select, textarea{
+    width:100%;
+  }
+}
+
+
+
+
+
+
+
+
+

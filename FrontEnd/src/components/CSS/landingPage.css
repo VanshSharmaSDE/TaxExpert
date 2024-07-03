@@ -1,0 +1,250 @@
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-body {
+  display: flex;
+  width: 102%;
+  height: 82vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+  45deg,
+  hsl(106deg 100% 20%) 0%,
+  hsl(106deg 91% 20%) 3%,
+  hsl(106deg 83% 20%) 6%,
+  hsl(106deg 75% 20%) 9%,
+  hsl(106deg 68% 19%) 11%,
+  hsl(106deg 62% 19%) 14%,
+  hsl(106deg 56% 18%) 17%,
+  hsl(106deg 50% 18%) 20%,
+  hsl(106deg 45% 17%) 23%,
+  hsl(106deg 40% 16%) 26%,
+  hsl(106deg 35% 15%) 30%,
+  hsl(106deg 31% 15%) 34%,
+  hsl(106deg 27% 13%) 38%,
+  hsl(106deg 24% 12%) 42%,
+  hsl(106deg 20% 11%) 47%,
+  hsl(106deg 17% 10%) 53%,
+  hsl(106deg 14% 8%) 59%,
+  hsl(106deg 11% 7%) 66%,
+  hsl(106deg 8% 5%) 73%,
+  hsl(106deg 5% 4%) 82%,
+  hsl(106deg 2% 2%) 90%,
+  hsl(0deg 0% 0%) 100%
+);
+  border-radius: 30px;
+}
+
+.main-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+  padding-left: 60px;
+  padding-top: 100px;
+}
+
+.main-left .name {
+  margin-bottom: 20px;
+}
+
+.main-left .name h1 {
+  font-size: 75px;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-left .name h4 {
+  color: yellowgreen;
+}
+
+.main-left .name h1 span {
+  color: yellowgreen;
+}
+
+.main-left .profile h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.main-left .profile p {
+  font-size: 30px;
+}
+
+.main-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-button {
+  margin-top: 70px;
+  width: 80px;
+  height: 20px;
+  background-color: yellowgreen;
+  color: white;
+  border-radius: 20px;
+  padding: 15px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media only screen and (min-device-width: 426px) and (max-device-width: 820px) {
+  .main-body {
+    overflow: hidden;
+    height: 90%;
+  }
+  .main-left {
+    position: relative;
+    width: 60%;
+    gap: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .main-left .name {
+    margin-bottom: 15px;
+  }
+  .main-left .name h4 {
+    font-size: 18px;
+  }
+  .main-left .profile {
+    position: relative;
+    width: 100%;
+  }
+  .main-left .profile p {
+    text-align: start;
+    margin-top: 10px;
+    font-size: 21px;
+  }
+
+  .main-left .profile h2 {
+    display: inline-block;
+    color: yellowgreen;
+    border-bottom: 2px solid;
+  }
+  .contact-button {
+    margin-top: 20px;
+    width: 80px;
+    height: 20px;
+    background-color: yellowgreen;
+    color: white;
+    border-radius: 20px;
+    padding: 15px 35px;
+  }
+  .main-right {
+    position: relative;
+    width: 40%;
+  }
+  .main-right img {
+    margin-top: auto;
+    width: 100%;
+    height: 90%;
+  }
+}
+@media only screen and (min-device-width: 0px) and (max-device-width: 430px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    gap: 10px;
+
+}
+  .main-body {
+    position: relative;
+    width: 98%;
+    overflow: hidden;
+    height: 82vh;
+    margin-top: 10px;
+  }
+  .main-left .name h1 {
+    font-size: 55px;
+    margin-top: 5px;
+    line-height: 60px;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+}
+  .main-left {
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 0px;
+  }
+  .main-left .name {
+    margin-bottom: 0px;
+  }
+  .main-left .name h4 {
+    font-size: 16px;
+  }
+  .main-left .profile {
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+  }
+  .main-left .profile p {
+    text-align: start;
+    margin-top: 30px;
+    font-size: 18px;
+    padding-right: 15px;
+  }
+
+  .main-left .profile h2 {
+          position: relative;
+        display: inline-block;
+        font-size: 25px;
+        top: 20px;
+        color: yellowgreen;
+        border-bottom: 2px solid;
+  }
+
+  .contact-button {
+        margin :2px;
+        margin-top: 25px;
+        position: relative;
+        width: 40px;
+        height: 10px;
+        border-radius: 20px;
+        padding: 14px 35px;
+        z-index: 100;
+  }
+  .main-right {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  .main-right img {
+    position: relative;
+    margin-top: auto;
+    width: 63%;
+    height: 50%;
+    left: 70px;
+
+  }
+
+  .help-section {
+    flex-direction: column;
+  }
+  .help-section span:before {
+    content: '-> ';
+  }
+}
+

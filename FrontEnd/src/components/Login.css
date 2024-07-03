@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poiret+One&display=swap');
+
+
+::selection{
+	background-color: rgb(159, 225, 162);
+}
+
+:root {
+  --color-bg1: rgb(0, 162, 19);
+  --color-bg2: rgb(52, 82, 0);
+  --color1: 0, 162, 19;
+  --color2: 52, 82, 0;
+  --color3: 0, 162, 19;
+  --color4: 52, 82, 0;
+  --color5: 0, 162, 19;
+  --color-interactive: 241, 241, 246;
+  --circle-size: 80%;
+  --blending: hard-light;
+}
+
+/* ---- Bakcground Animaition ---- */
+
+#gradient-bg {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+	background-color: #000;
+  top: 0;
+	left: 0;
+}
+svg {
+  display: none;
+}
+
+.gradients-container {
+  filter: url(#goo) blur(40px) ;
+  width: 100%;
+  height: 100%;
+ }
+
+.gradient1 {
+   position: absolute;
+   background: radial-gradient(circle at center, rgba(var(--color1), 0.8) 0, rgba(var(--color1), 0) 50%) no-repeat;
+   mix-blend-mode: var(--blending);
+   width: var(--circle-size);
+   height: var(--circle-size);
+   top: calc(50% - var(--circle-size) / 2);
+   left: calc(50% - var(--circle-size) / 2);
+   transform-origin: calc(50% - 200px);
+   animation: moveInCircle 30s ease infinite;
+   opacity: 1;
+}
+
+.gradient2{
+	position: absolute;
+  background: radial-gradient(circle at center, rgba(var(--color2), 0.8) 0, rgba(var(--color2), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 400px);
+  animation: moveHorizontal 30s infinite;
+  opacity: 1;
+}
+
+.gradient3 {
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(var(--color3), 0.8) 0, rgba(var(--color3), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2 + 200px);
+  left: calc(50% - var(--circle-size) / 2 - 500px);
+  transform-origin: calc(50% + 400px);
+  animation: moveInCircle 90s linear infinite;
+  opacity: 1;
+}
+
+.gradient4 {
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(var(--color4), 0.8) 0, rgba(var(--color4), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: var(--circle-size);
+  height: var(--circle-size);
+  top: calc(50% - var(--circle-size) / 2);
+  left: calc(50% - var(--circle-size) / 2);
+  transform-origin: calc(50% - 200px);
+  animation: moveHorizontal 90s ease infinite;
+  opacity: 0.7;
+}
+
+.gradient5 {
+  position: absolute;
+  background: radial-gradient(circle at center, rgba(var(--color5), 0.8) 0, rgba(var(--color5), 0) 50%) no-repeat;
+  mix-blend-mode: var(--blending);
+  width: calc(var(--circle-size));
+  height: calc(var(--circle-size)*2);
+  top: calc(50% - var(--circle-size));
+  left: calc(150% - var(--circle-size));
+  transform-origin: calc(50% - 800px) calc(50% + 200px);
+  animation: moveVertical 50s reverse infinite;
+  opacity: 1;
+}
+
+@keyframes moveInCircle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moveVertical {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(50%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+  50% {
+    transform: translateX(50%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-10%);
+  }
+}
+
+/* --------- Form ----------- */
+
+#form-container{
+	position: absolute;
+  left: 50%;
+	top: 50%;
+  transform: translate(-50%,-50%);
+	width: 400px;
+	height: 500px;
+ 	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+   border-radius: 20px;
+   border:1px solid rgba(255, 255, 255, 0.18);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	overflow: hidden;
+	padding: 20px;
+}
+
+/* -----  Form content  ------ */
+#form-container .title{
+	font-weight: 800;
+	font-size: 40px;
+}
+#form-container .msg{
+	margin: 10px;
+}
+#form-container input{
+	background-color: transparent;
+	border: none;
+	height: 30px;
+	width: 90%;
+	border-bottom: solid 2px #fff;
+	margin: 10px;
+	font-size: 16px;
+  color: #fff;
+}
+#form-container a{
+	color: rgb(190, 173, 250);
+	text-decoration: none;
+	font-weight: 800;
+}
+#form-container .label{
+	margin-top: 20px;
+}
+#form-container .submit{
+	margin-top: 70px;
+	color: #fff;
+	height: 40px;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+   border-radius: 5px;
+   border:1px solid rgba(255, 255, 255, 0.18);
+   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+#form-container input:focus{
+    border-bottom: 2px solid #fff;
+		outline: none;
+    font-size: 16px;
+    color: #fff;
+}
+#form-container .submit:hover{
+	background-color: rgb(255, 255, 255);
+	color: #000;
+}
+#form-container a:hover{
+	text-decoration: underline;
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 430px) {
+  #form-container{
+    width: 300px;
+  }
+}

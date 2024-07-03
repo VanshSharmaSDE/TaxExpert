@@ -1,0 +1,57 @@
+.admin-main {
+  width: 96vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background-image: linear-gradient(45deg,
+      hsl(144deg 100% 11%) 0%,
+      hsl(139deg 55% 16%) 20%,
+      hsl(136deg 36% 20%) 54%,
+      hsl(133deg 26% 23%) 75%,
+      hsl(132deg 18% 27%) 87%,
+      hsl(131deg 13% 31%) 93%,
+      hsl(130deg 9% 34%) 97%,
+      hsl(129deg 5% 38%) 99%,
+      hsl(129deg 2% 41%) 100%,
+      hsl(0deg 0% 45%) 100%);
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-left: 1vw;
+
+}
+
+
+.admin-main input {
+  height: 40px;
+  border: 1px solid gray;
+  width: 93%;
+  padding-left: 20px;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.admin-main input:focus {
+  border: 5px solid white;
+}
+
+.admin-main button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: yellowgreen;
+  cursor: pointer;
+  border: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.admin-main button:hover {
+  transform: scale(1.2);
+  background-color: royalblue;
+}
+
+.admin-main label {
+  font-size: 20px;
+  color: white;
+}
