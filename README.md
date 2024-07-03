@@ -1,17 +1,17 @@
-# TeaExpert.site
+# 🌐 TeaExpert.site
 
 # Overview
 TeaExpert.site is a comprehensive portfolio website for Advocate Deepak Shrivastava, built using the MERN stack. This website serves as a professional showcase, highlighting Deepak's expertise and providing an easy way for potential clients to get in touch.
 
 # Features
-Admin Panel: Seamlessly manage and update website content.
-Content Management System: Efficiently organize and present information.
-Gradient Design: Visually appealing layout with modern gradients.
-Responsive Design: Optimized for every mobile use, ensuring a seamless experience across devices.
-Contact Form: Fully functional contact form for direct communication.
-Social Links: Integrated links to various social media profiles.
-Location Link: Easily accessible location information.
-Regular Updates: The site will be updated regularly as per the client's needs.
+✨ Admin Panel: Seamlessly manage and update website content.
+📝 Content Management System: Efficiently organize and present information.
+🎨 Gradient Design: Visually appealing layout with modern gradients.
+📱 Responsive Design: Optimized for every mobile use, ensuring a seamless experience across devices.
+📧 Contact Form: Fully functional contact form for direct communication.
+🔗 Social Links: Integrated links to various social media profiles.
+📍 Location Link: Easily accessible location information.
+🔄 Regular Updates: The site will be updated regularly as per the client's needs.
 
 # Technologies Used
 Frontend: React.js
@@ -33,6 +33,9 @@ bash
 Copy code
 cd teaexpert-site
 Install the dependencies:
+
+Create a key.js file for database access:
+Due to security reasons, the key.js file has been removed from the repository. Please create your own key.js file with the necessary database credentials.
 
 bash
 Copy code
