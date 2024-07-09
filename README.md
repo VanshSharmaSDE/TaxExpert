@@ -54,7 +54,7 @@ npm start
 The application will be accessible at http://localhost:3000.
 
 # Deployment
-The live website is deployed and accessible at TeaExpert.site.
+The live website is deployed and accessible at taxexpert.site
 
 # Contributing
 Contributions are welcome! Please fork the repository and submit a pull request for review.
