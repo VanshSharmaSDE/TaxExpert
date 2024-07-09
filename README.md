@@ -5,12 +5,19 @@ TeaExpert.site is a comprehensive portfolio website for Advocate Deepak Shrivast
 
 # Features
 ✨ Admin Panel: Seamlessly manage and update website content.
+
 📝 Content Management System: Efficiently organize and present information.
+
 🎨 Gradient Design: Visually appealing layout with modern gradients.
+
 📱 Responsive Design: Optimized for every mobile use, ensuring a seamless experience across devices.
+
 📧 Contact Form: Fully functional contact form for direct communication.
+
 🔗 Social Links: Integrated links to various social media profiles.
+
 📍 Location Link: Easily accessible location information.
+
 🔄 Regular Updates: The site will be updated regularly as per the client's needs.
 
 # Technologies Used
