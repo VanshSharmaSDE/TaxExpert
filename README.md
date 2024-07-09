@@ -1,4 +1,4 @@
-# 🌐 TeaExpert.site
+se# 🌐 TeaExpert.site
 
 # Overview
 TeaExpert.site is a comprehensive portfolio website for Advocate Deepak Shrivastava, built using the MERN stack. This website serves as a professional showcase, highlighting Deepak's expertise and providing an easy way for potential clients to get in touch.
@@ -31,26 +31,25 @@ To run this project locally:
 
 # Clone the repository:
 
-bash
-Copy code
+
+
 git clone https://github.com/yourusername/teaexpert-site.git
 Navigate to the project directory:
 
-bash
-Copy code
+
 cd teaexpert-site
 Install the dependencies:
 
 Create a key.js file for database access:
 Due to security reasons, the key.js file has been removed from the repository. Please create your own key.js file with the necessary database credentials.
 
-bash
-Copy code
+
+
 npm install
 Start the development server:
 
-bash
-Copy code
+
+
 npm start
 The application will be accessible at http://localhost:3000.
 
